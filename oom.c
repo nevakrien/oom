@@ -24,7 +24,8 @@ int main() {
         Node *newNode = (Node *)malloc(sizeof(Node));
         if (newNode == NULL) {
             if(!oomed){
-                printf("\nstarting timer %f\n",timer_seconds);
+                //printf("\nstarting timer %f\n",timer_seconds);
+                printf("\nhahaha errored I am keeping on anoying the is anyway!!!\n");
                 start_time = clock();
                  oomed=1;
             }
@@ -34,11 +35,11 @@ int main() {
                     break;
                 }
             }
-            double time_passed=(clock()-start_time)/CLOCKS_PER_SEC;
-            if ( time_passed>= timer_seconds) {
-                printf("done ooming\n");
-                break;
-            }
+            // double time_passed=(clock()-start_time)/CLOCKS_PER_SEC;
+            // if ( time_passed>= timer_seconds) {
+            //     printf("done ooming\n");
+            //     break;
+            // }
             continue;
         }
 
